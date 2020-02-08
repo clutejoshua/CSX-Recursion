@@ -1,0 +1,9 @@
+const repeater = (char, counter = 0) => {
+  if (counter === 4) return char;
+  counter++;
+  return char + repeater(char, counter)
+}
+
+// To check if you've completed the challenge, uncomment these console.logs!
+console.log(repeater('g'));
+console.log(repeater('j'));
